@@ -28,7 +28,7 @@ public class Board {
             } else if (currentPlayer.getPosition() + diceResult < 100) {
                 Shifter shifter = map.get(currentPlayer.getPosition() + diceResult);
                 if (shifter != null)
-                    shifter.move(currentPlayer);
+                    shifter.shift(currentPlayer);
                 else {
                     System.out.printf("%s moved from %d to %d%n", currentPlayer.getName(), currentPlayer.getPosition(), currentPlayer.getPosition() + diceResult);
                     currentPlayer.setPosition(currentPlayer.getPosition() + diceResult);

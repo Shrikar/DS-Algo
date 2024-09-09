@@ -12,7 +12,7 @@ public class Snake implements Shifter {
     }
 
     @Override
-    public void move(Player player) {
+    public void shift(Player player) {
         System.out.printf("%s bitten by snake at %d moved to %d%n", player.getName(), this.from(), this.to());
         player.setPosition(to);
     }

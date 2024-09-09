@@ -1,7 +1,7 @@
 package org.example;
 
 public interface Shifter {
-    void move(Player player);
+    void shift(Player player);
     Integer from();
     Integer to();
 }

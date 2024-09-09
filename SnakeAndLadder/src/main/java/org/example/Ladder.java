@@ -12,7 +12,7 @@ public class Ladder implements Shifter {
     }
 
     @Override
-    public void move(Player player) {
+    public void shift(Player player) {
         System.out.printf("%s climbed ladder at %d moved to %d%n", player.getName(), this.from(), this.to());
         player.setPosition(to);
     }
